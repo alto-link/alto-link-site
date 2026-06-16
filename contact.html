@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | Alto Link</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", sans-serif;
+      color: #102A5C;
+      background: #f7fbff;
+    }
+    header {
+      padding: 24px;
+      background: #102A5C;
+      color: white;
+      text-align: center;
+    }
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+    p {
+      line-height: 1.8;
+    }
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    textarea {
+      min-height: 160px;
+    }
+    button {
+      margin-top: 24px;
+      width: 100%;
+      padding: 14px;
+      background: #102A5C;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0b1f45;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 24px;
+      color: #102A5C;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Alto Link</h1>
+  <p>ITをもっと身近に、もっと便利に。</p>
+</header>
+
+<main>
+  <h1>お問い合わせ</h1>
+  <p>
+    ITサポート、ホームページ制作、AI活用サポートについてお気軽にご相談ください。<br>
+    内容を確認後、通常1営業日以内にご返信いたします。
+  </p>
+
+  <form action="https://formsubmit.co/info@alto-link.com" method="POST">
+    <input type="hidden" name="_subject" value="Alto Linkへのお問い合わせ">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="name">お名前</label>
+    <input type="text" id="name" name="お名前" required>
+
+    <label for="email">メールアドレス</label>
+    <input type="email" id="email" name="メールアドレス" required>
+
+    <label for="service">ご相談内容</label>
+    <select id="service" name="ご相談内容" required>
+      <option value="">選択してください</option>
+      <option value="ITサポート">ITサポート</option>
+      <option value="ホームページ制作">ホームページ制作</option>
+      <option value="AI活用サポート">AI活用サポート</option>
+      <option value="その他">その他</option>
+    </select>
+
+    <label for="message">お問い合わせ内容</label>
+    <textarea id="message" name="お問い合わせ内容" required></textarea>
+
+    <button type="submit">送信する</button>
+  </form>
+
+  <a class="back" href="/">← トップページへ戻る</a>
+</main>
+
+</body>
+</html>
